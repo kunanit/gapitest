@@ -1,6 +1,6 @@
 # specific files to ignore
-mykey.p12
-mykey.pem
+/mykey.p12
+/mykey.pem
 
 
 #################
