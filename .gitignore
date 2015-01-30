@@ -1,6 +1,7 @@
 # specific files to ignore
 /mykey.p12
 /mykey.pem
+node_modules
 
 
 #################
