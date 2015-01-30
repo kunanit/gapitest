@@ -1,8 +1,8 @@
 {
   "name": "googleapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "basictest.js",
+  "description": "My description",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.11.1",
     "googleapis": "^1.1.1"
