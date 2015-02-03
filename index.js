@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 app.get('/', function (req, res) {
   res.send(myvar);
   // console.log(req.query.field);
-  // gapitest.makegapicall();
+  gapitest.makegapicall();
 })
 
 var server = app.listen(app.get('port'), function() {
