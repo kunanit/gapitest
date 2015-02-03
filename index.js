@@ -1,20 +1,14 @@
 var express = require('express')
 var gapitest = require('./gapitest.js')
 var app = express()
-
+var myvar = 'eggs'
+app.set('port', (process.env.PORT || 5000));
 app.get('/', function (req, res) {
   res.send(myvar);
-  console.log(req.query.field);
-  gapitest.makegapicall();
+  // console.log(req.query.field);
+  // gapitest.makegapicall();
 })
 
-var server = app.listen(3000, function () {
-
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log('Example app listening at http://%s:%s', host, port)
-  
-})
-
-var myvar = 'eggs'
+var server = app.listen(app.get('port'), function() {
+  console.log("Node app is listening on " + app.get('port'));
+});
